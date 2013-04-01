@@ -91,9 +91,10 @@ var GmapsAutoComplete = {
     if (!this.map) { return }
 
     // the marker shows us the position of the latest address
-    this.marker = opts['marker'] || new google.maps.Marker({
+    this.marker = new google.maps.Marker({
       map: this.map,
-      draggable: true
+      draggable: opts['draggable'] || true,
+      icon: opts['icon'] || undefined
     });
 
     self.addMapListeners(this.marker, this.map);

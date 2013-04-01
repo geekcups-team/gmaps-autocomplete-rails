@@ -94,7 +94,7 @@ var GmapsAutoComplete = {
 
     this.marker = new google.maps.Marker({
       map: this.map,
-      draggable: opts['draggable']
+      draggable: opts['draggable'],
       icon: opts['icon'] || undefined
     });
 

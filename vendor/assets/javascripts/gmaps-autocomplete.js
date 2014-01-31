@@ -168,7 +168,7 @@ var GmapsAutoComplete = {
     request = {};
     request[type] = value;
 
-    this.geocoder.geocode(request, performGeocode);
+    this.geocoder.geocode(request, self.performGeocode);
   },
 
   performGeocode: function(results, status) {

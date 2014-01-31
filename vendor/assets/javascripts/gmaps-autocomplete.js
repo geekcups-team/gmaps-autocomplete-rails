@@ -189,7 +189,7 @@ var GmapsAutoComplete = {
                  results[0].geometry.location )
 
       // Only update the map (position marker and center map) if requested
-      if( update ) { this.updateMap( results[0].geometry ) }
+      this.updateMap( results[0].geometry )
     } else {
       // Geocoder status ok but no results!?
       self.showError( this.geocodeErrorMsg() );

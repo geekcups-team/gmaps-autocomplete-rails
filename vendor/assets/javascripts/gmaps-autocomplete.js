@@ -183,7 +183,6 @@ var GmapsAutoComplete = {
   },
 
   geocodeSuccess: function(results) {
-    this.debug('geocodeSuccess', results);
     // Google geocoding has succeeded!
     if (results[0]) {
       // Always update the UI elements with new location data

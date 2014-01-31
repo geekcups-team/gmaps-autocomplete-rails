@@ -185,14 +185,14 @@ var GmapsAutoComplete = {
     // Google geocoding has succeeded!
     if (results[0]) {
       // Always update the UI elements with new location data
-      this.updateUI( results[0].formatted_address,
+      self.updateUI( results[0].formatted_address,
                  results[0].geometry.location )
 
       // Only update the map (position marker and center map) if requested
       if( update ) { this.updateMap( results[0].geometry ) }
     } else {
       // Geocoder status ok but no results!?
-      this.showError( this.geocodeErrorMsg() );
+      self.showError( this.geocodeErrorMsg() );
     }
   },
 

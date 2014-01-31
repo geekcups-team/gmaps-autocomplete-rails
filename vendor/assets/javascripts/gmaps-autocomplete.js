@@ -172,8 +172,7 @@ var GmapsAutoComplete = {
   },
 
   performGeocode: function(results, status) {
-    this.debug('performGeocode', status);
-
+    
     $(self.errorField).html('');
     if (status == google.maps.GeocoderStatus.OK) {
       self.geocodeSuccess(results);
